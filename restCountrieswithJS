@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 5px;
+            padding: 5px;
+            
+        }
+
+        p {
+            margin: 10px;
+        }
+        h5 {
+            margin: 10px;
+        }
+        img {
+            height: 50%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: rgb(241, 235, 235);
+            margin: 10px;
+            padding: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+        .col-lg-3 .col-sm-12{
+            height: 200px;
+            width: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const first = document.createElement('div')
+        first.setAttribute('class', "col-lg-3 col-sm-12");
+        
+                   first.innerHTML = `
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png"
+                    alt="img not available">
+                <h5> Germany </h5>
+                <p> <b>Population:</b> 81,777,900 </p>
+                <p> <b>Region:</b>Europe </p>
+                <p> <b>Capital:</b> Berlin </p>`;
+        const second = document.createElement('div')
+        second.setAttribute('class', "col-lg-3 col-sm-12");
+        
+                   second.innerHTML = `
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/640px-Flag_of_the_United_States.svg.png
+                  " alt="img not available">
+        <h5> United States Of America </h5>
+                  <p> <b>Population:</b> 323,947,000 </p>
+                  <p> <b>Region:</b>Americas </p>
+                  <p> <b>Capital:</b> Washington, D.C. </p>`;
+                  
+                 const third = document.createElement('div')
+        third.setAttribute('class', "col-lg-3 col-sm-12");
+        third.innerHTML = `
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Brazil_flag_300.png
+                  " alt="img not available">
+        <h5> Brazil </h5>
+                <p> <b>Population:</b> 206,135,893 </p>
+                <p> <b>Region:</b>Americas </p>
+                <p> <b>Capital:</b> Brasilia </p>`;
+        const fourth = document.createElement('div')
+        
+        fourth.setAttribute('class', "col-lg-3 col-sm-12");
+        fourth.innerHTML = `
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Iceland.svg/640px-Flag_of_Iceland.svg.png
+                  " alt="img not available">
+                  
+        <h5> Iceland </h5>
+                <p> <b>Population:</b> 334,300 </p>
+                <p> <b>Region:</b>Europe </p>
+                <p> <b>Capital:</b> Reykjavik </p>`;
+                
+        document.body.append(first, second, third, fourth);
+    </script>
+</body>
+</html>
